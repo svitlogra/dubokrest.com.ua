@@ -1,0 +1,105 @@
+//header============================================================
+
+.header {
+    width: 100%;
+    height: 110px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 1000;
+    
+}  
+
+.social__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.125rem;
+    padding: 15px 0;
+} 
+.social__nav {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.6);
+    border-bottom: solid 1px #bbb2a1;
+   
+   
+   
+}
+.social__items>a {
+    margin-right: 20px;
+    color: $primary;
+    opacity: 0.6;
+    transition: opacity linear .2s;
+    -webkit-transition: opacity linear .2s;
+    -moz-transition: opacity linear .2s;
+    -ms-transition: opacity linear .2s;
+    -o-transition: opacity linear .2s;
+}
+
+.social__items>a:last-child {
+    margin-right: 0px;
+}
+
+.social__items>a:hover {
+    opacity: 1;
+}
+
+.contacts__items>a {
+    margin-left: 35px;
+    color: $primary;
+    opacity:.65;
+    transition: opacity linear .2s;
+    -webkit-transition: opacity linear .2s;
+    -moz-transition: opacity linear .2s;
+    -ms-transition: opacity linear .2s;
+    -o-transition: opacity linear .2s;
+}
+
+.contacts__items>a:hover{
+    opacity: 1;
+}
+
+
+
+.logo {
+    width: 100%;
+    max-width: 150px;
+} 
+
+
+// top mavigation===============================================
+
+.main__nav {
+    position: fixed;
+   
+
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+    
+ .nav__items {
+     display: flex;
+     justify-content: flex-end;
+ }
+
+.nav__items>a {
+    margin-left: 50px;
+    font-size: 18px;
+    color: $white;
+    letter-spacing: .5px;
+    transition:  text-decoration linear .5s;
+    -webkit-transition:  text-decoration linear .5s;
+    -moz-transition:  text-decoration linear .5s;
+    -ms-transition:  text-decoration linear .5s;
+    -o-transition:  text-decoration linear .5s;
+}
+
+.nav__items>a:first-child{
+     margin-left: 0px;
+ }
+
+.nav__items>a:hover{
+    text-decoration: underline;
+}

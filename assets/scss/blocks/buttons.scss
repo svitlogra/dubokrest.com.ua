@@ -1,0 +1,30 @@
+// button=================================================
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    padding: 14px 40px;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background-color .3s linear;
+    -webkit-transition: background-color .3s linear;
+    -moz-transition: background-color .3s linear;
+    -ms-transition: background-color .3s linear;
+    -o-transition: background-color .3s linear;
+}
+.btn--main{
+    margin: 0 auto;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: $white;
+    letter-spacing: 2px;
+    background-color: $light;
+    border: 0;
+    
+}
+
+.btn--main:hover{
+    background-color: $main;
+    border: 0;
+}
