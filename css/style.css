@@ -128,7 +128,6 @@ img {
 }
 
 .main__nav {
-  position: fixed;
   padding-top: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -174,7 +173,7 @@ img {
 }
 
 .hero__box {
-  background: #895a30 url("assets/images/homepage/herophoto.png") no-repeat center;
+  background: #895a30 url("/assets/images/homepage/herophoto.png") no-repeat center;
   background-size: cover;
   height: 750px;
   padding-top: 110px;
@@ -250,5 +249,191 @@ img {
 .btn--main:hover {
   background-color: #895a30;
   border: 0;
+}
+
+.about {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 650px;
+}
+
+.about__images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  max-width: 50%;
+  overflow: hidden;
+}
+
+.img__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 49.3%;
+}
+
+.img__row > img {
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  -webkit-transition: linner, -webkit-transform .8s;
+  transition: linner, -webkit-transform .8s;
+  transition: transform .8s, linner;
+  transition: transform .8s, linner, -webkit-transform .8s;
+  -webkit-transition: transform .8s, linner;
+  -moz-transition: transform .8s, linner;
+  -ms-transition: transform .8s, linner;
+  -o-transition: transform .8s, linner;
+}
+
+.img__vrtcl {
+  width: 100%;
+  max-width: 33%;
+}
+
+.img__hrzntl {
+  width: 100%;
+  max-width: 66%;
+}
+
+.img__row > img:hover {
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+}
+
+.about__box {
+  margin-left: 60px;
+  max-width: 40%;
+  padding-right: 15px;
+}
+
+.about__link {
+  font-size: 14px;
+  color: #b18233;
+}
+
+.title {
+  margin: 30px 0;
+  font-size: 35px;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.about__description {
+  line-height: 1.4;
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+.btn--primary {
+  color: #3d3734;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+  font-size: 14px;
+  padding: 14px 40px;
+  cursor: pointer;
+  transition: background-color .3s linear;
+  -webkit-transition: background-color .3s linear;
+  -moz-transition: background-color .3s linear;
+  -ms-transition: background-color .3s linear;
+  -o-transition: background-color .3s linear;
+}
+
+.btn--primary:hover {
+  background-color: #b18233;
+  color: #fcfdfc;
+  border: 0;
+}
+
+.rooms__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.rooms__title {
+  margin: 0 0 30px;
+  text-align: center;
+}
+
+.rooms__text {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.rooms__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.rooms__item {
+  width: 33%;
+  margin: 0 0 35px 0px;
+  height: 500px;
+  -webkit-box-shadow: 0px 1px 2px 0px rgba(31, 30, 30, 0.2);
+          box-shadow: 0px 1px 2px 0px rgba(31, 30, 30, 0.2);
+}
+
+.room__photo {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  top: 50%;
+  left: 50%;
+}
+
+.room__text {
+  display: block;
+  padding-left: 25px;
+}
+
+.room__name {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 20px 0;
+}
+
+.room__description {
+  font-size: 16px;
+  color: #3d3734;
+}
+
+.fa-check-circle {
+  color: #b18233;
+  font-size: 14px;
+  padding-right: 15px;
 }
 /*# sourceMappingURL=style.css.map */
