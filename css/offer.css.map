@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,aAAa,CAAA;EACT,MAAM,EAAE,GAAG,CAAC,KAAK,CAAC,kBAAkB;EACpC,MAAM,EAAE,MAAM;EACd,OAAO,EAAE,aAAa;EACtB,SAAS,EAAE,MAAM;CACpB;;AAED,AAAA,YAAY,CAAA;EACR,MAAM,EAAE,MAAM;EACd,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,aAAa;EAC9B,WAAW,EAAE,MAAM;CACtB;;AAED,AAAA,YAAY,GAAC,EAAE,CAAA;EACX,WAAW,EAAE,GAAG;EAChB,WAAW,EAAE,GAAG;EAChB,SAAS,EAAE,IAAI;CAClB",
+    "sources": [
+        "../assets/scss/blocks/offer.scss"
+    ],
+    "names": [],
+    "file": "offer.css"
+}

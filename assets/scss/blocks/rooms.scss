@@ -1,0 +1,64 @@
+// rooms====================================
+.rooms__box{
+    display: flex;
+    flex-direction: column;
+   
+    align-items: center;
+    line-height: 1.5;
+}
+.rooms__title{
+        margin: 0 0 30px;
+        text-align: center;
+}
+
+.rooms__text {
+     font-size: 18px;
+     text-align: center;
+     margin-bottom: 50px;
+}
+
+.rooms__inner{
+    display: flex;
+    justify-content: space-between;
+}
+    
+.rooms__item{
+    width: 33%;
+    margin: 0 0 35px 0px;
+    height: auto;
+    // border: 1px solid rgba(63, 61, 60, .2);
+    box-shadow: 0px 1px 2px 0px rgba(31, 30, 30, 0.2);
+}
+
+.room__photo{
+   display: block;
+   max-width: 100%;
+   height: auto;
+   top: 50%;
+   left: 50%;
+  
+}
+
+
+
+.room__text{
+    display: block;
+    padding: 25px;
+}
+
+.room__name{
+    font-size: 20px;
+    font-weight: 600;
+    padding: 0 0 20px 0;
+}
+
+.room__description{
+    font-size: 16px;
+    color:$primary; 
+    
+}
+.fa-check-circle{
+    color: $light;
+    font-size: 14px;
+    padding-right: 15px;
+}
