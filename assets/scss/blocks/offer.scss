@@ -1,0 +1,22 @@
+// offer--container----------------------------
+
+.offer__items{
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+    padding: 30px 0 30px 0;
+    max-width: 1000px;
+}
+
+.offer__text{
+    margin: 0 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.offer__text>h3{
+    font-weight: 500;
+    line-height: 1.5;
+    font-size: 16px;
+}
+

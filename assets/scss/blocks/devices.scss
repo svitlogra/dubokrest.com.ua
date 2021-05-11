@@ -1,0 +1,397 @@
+.img__device{
+    display: none;       
+}
+
+.menu__device{
+    display: none;
+}
+
+.rest__device{
+    display: none;
+}
+
+/* Media
+===================*/
+
+
+@media (max-width: 1025px) 
+
+{ 
+    /* Social__nav */
+    .social__nav {
+        display: none;
+    }
+    
+    /* Section */
+    section {
+        margin-top: 50px;
+    }
+    
+     /* Nav__items */
+    
+     .nav__items {
+        display: none;
+    }
+    
+    /* Burger */
+    .burger {
+        display: block;
+    }
+    
+    /* Hero__box */
+        
+    .hero__box{
+        height: auto;        
+    }
+        
+    .hero__items{
+        margin: 50px auto;
+    }
+    .hero__title{
+    font-size: 70px;
+    }
+        
+    .hero__subtitle{
+    font-size: 24px;
+    }
+        
+    .hero__text{
+        margin-bottom: 40px;
+        font-size: 25px;
+    }
+    
+    /* About */
+    
+    .about-box{
+        margin-left: 40px;
+    }
+    
+    .about__images{
+        display: none;
+    }
+    
+    .img__device{
+        display: block;
+        object-fit: cover;
+        width: 100%;
+        max-width:50%;
+        height: inherit;
+
+    }
+    
+    .title {
+        margin: 12px 0;
+        font-size: 25px;
+    }
+    
+     /* restrount  */
+     
+     .rest__content{
+         padding: 0 40px;
+     }
+     
+     .btn--rest{
+        margin-top: 45px;
+     }
+     .menu__images {
+        display: none;
+    }
+    
+    .menu__device-wrap {
+        display: block;
+        width: 100%;
+        max-width:45%;
+     
+    }
+    
+    .menu__device {
+        display: block;
+        max-width:100%;
+        margin-left: -15px;
+     
+    }
+    
+    
+    .menu__content {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding-left: 15px;
+        
+    }
+   
+     /* Offer  */
+   
+     .offer__items {
+        padding: 20px 0;
+        max-width: 95%;
+     } 
+     
+     .map__cover {
+        height: auto;
+     }
+        
+        
+     /* map__wrapper */
+     
+        
+    .map__items {
+        margin: -15px;
+    }
+    
+    .map__location {
+        width: 100%;
+    }
+    
+    .contactform {
+       display: none;
+    }
+}
+    
+@media (max-width: 768px) {
+
+
+
+.body {
+    font-size: 14px;
+}
+
+.title {
+    margin: 20px 0;
+    font-size: 22px;
+}
+
+/* Hero__box */
+.hero__title{
+    font-size: 60px;
+    }
+        
+.hero__subtitle{
+    font-size: 20px;
+    }
+        
+.hero__text{
+    margin-bottom: 40px;
+    font-size: 16px;
+}
+    
+    
+    /* About */
+.about__description>p:last-child{
+    display: none;
+}
+
+    /* Rooms__box */
+.btn--main {
+        
+    font-size: 14px;
+}
+    
+.rooms__item {
+    height: auto;
+    }
+    
+.rooms__text{
+    width: 100%;
+
+}
+.room__text{
+    display: none;
+       
+    }
+  
+  /* Menu__box */
+  
+.menu__device{
+    margin: 0;
+}
+   
+/* Offer */
+
+.offer__text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+        
+}
+    
+.offer__text > h3 {
+    line-height: 3;
+    }
+ /* Footer */     
+.footer__logo{
+    display: none;
+    }
+}
+
+@media (max-width: 431px) {
+
+    .title {
+        margin: 18px 0;
+        font-size: 20px;
+    }
+
+    /* hero__box */
+    
+    .hero__title{
+        font-size: 50px;
+    }
+            
+        .hero__subtitle{
+        font-size: 18px;
+    }
+       
+        
+        /* About */
+        
+        .about {
+           height: auto;
+        }
+        
+        .img__device {
+            display: none;
+        }
+        
+        .about__box{
+            padding: 0 20px;
+            margin: 0 auto;
+            max-width: 80%;
+        }
+        
+        .about__description {
+            margin-bottom: 30px;
+        }
+        
+        /* Rooms__box */
+               
+        .rooms__title{
+            margin: 0 0 10px;
+        }
+        
+        .rooms__text {
+            font-size: 16px;
+            line-height: 1.3;
+            margin-bottom: 15px;
+            
+        }
+        
+        .rooms__inner {
+            flex-wrap: wrap;
+        }
+        
+        .rooms__item {
+            width: 100%;
+            margin: -3px 0 15px 0px;
+        }
+        
+      
+    /* Restrount__menu */
+    
+    .menu__box{
+     flex-wrap: wrap;
+     height: auto;
+    }
+    
+    .menu__device-wrap {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        height: 300px;
+        overflow: hidden;
+    }
+    
+    .menu__device {
+        display: block;
+        max-width: 100%;
+        transform: translateY(-50px);
+       
+    }
+    
+    .menu__content{
+        margin: 20px 0 0;
+    }
+    
+     /* Rest__box */
+       
+     .rest__item {
+        position: relative;
+        background-size: cover;
+              
+         margin: 0 -15px;
+        }
+        
+        .rest__content{
+           position: absolute;
+           z-index: 200;
+            width: 85%;
+            margin: 35px;
+            padding: 0;
+                   
+        }
+        
+        .rest__photo{
+         display: none;
+                 
+        }
+        
+        .rest__device{
+           display: block;
+           position: relative;
+           opacity: .18;
+           display: block;
+           height: 350px;
+           object-fit: cover;
+        }
+      
+     
+        
+        .rest__title{
+        
+          margin: 0 0 20px;
+        
+        }
+        
+        .btn--rest {
+         margin-top: 20px;
+         padding: 10px 25px;
+        }
+         
+        
+    /* Offer */
+    
+    .offer__text > h3 {
+        line-height: 1.6;
+        padding-bottom: 10px;
+        text-align: center;
+            }
+     /* Footer */     
+     .footer__title {
+        font-size: 16px;
+    }
+    
+    .footer__block{
+       padding: 20px;
+    }
+}
+
+@media (max-width: 376px) {
+    .rest__device{
+        height: 395px;
+    
+    }
+    
+    .offer__text {
+        margin: 0;
+    
+    }
+
+}
+
+@media (max-width: 321px) {
+    .rest__device{
+        height: 395px;
+    
+    }
+
+}
+    
