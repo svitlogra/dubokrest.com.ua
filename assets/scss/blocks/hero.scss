@@ -1,7 +1,7 @@
 // hero-box================================================
   
-.hero__box{
-    background: $main url('/assets/images/homepage/herophoto.png') no-repeat center;
+.hero--box{
+    background: $main url('/assets/images/homepage/mainhero.jpg') no-repeat center;
     background-size: cover;
     height: 100vh;
     min-height: 600px;
@@ -10,15 +10,17 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    font-family: 'Raleway', sans-serif;
-    color: $white;
+    
 }
 
 .hero__items{
     width: 100%;
     max-width: 700px;
+    position: relative;
+    z-index: 10;
     margin: 0 auto;
     text-align: center;
+    color: $white;
 }
 
 .hero__title{
