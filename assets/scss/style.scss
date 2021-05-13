@@ -32,7 +32,8 @@ font-family: 'Open Sans', sans-serif;
 }
 
 p {
-margin: 0 0 10px;
+margin: 0;
+padding: 0 0 15px;
 }
 
 section {
@@ -66,46 +67,56 @@ img{
     padding: 0 15px;
 }
 
+/* Title */
+
+.title{
+    font-family: 'Raleway', sans-serif;
+    margin: 30px 0;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
 .title--hero{
+    font-family: 'Raleway', sans-serif;
     position: relative;
     z-index: 10;
     padding-top: 110px;
-    font-family: 'Raleway', sans-serif;
+    
     color: $white;
     text-align: center;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 5px;
+    letter-spacing: 2px;
     
 }
 
-.hero{
-    height: 400px;
-    min-height: 400px;
+
+
+
+/* page__text */
+.page__text{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    position: relative;
+    text-align: center;
+}
+
+.page__description{
+    font-family: 'Raleway', sans-serif;
     
-    &:after {
-        content: "";
-        display: block;
-        width: 100%;
-        height: 100%;
-    
-        background-image: linear-gradient(
-            to bottom,
-            rgba($primary, .8),
-            rgba($primary, .1) 50%,
-            rgba($primary, .8)
-        );
-    
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 2;
-    }
+    max-width: 45rem;
+    line-height: 1.6;
+    margin: 0 auto;
+}
+.title--pages{
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-top: 0;
+
+
 }
 /* Blocks */
 
@@ -113,9 +124,8 @@ img{
 @import "blocks/hero";
 @import "blocks/buttons";
 @import "blocks/about";
-@import "blocks/btn";
 @import "blocks/rooms";
-@import "blocks/restrount";
+@import "blocks/restmainpage";
 @import "blocks/restrount__menu";
 @import "blocks/offer";
 @import "blocks/map-wrapper";
@@ -126,7 +136,10 @@ img{
 @import "blocks/actions-cards";
 @import "blocks/contacts";
 @import "blocks/hotel";
-
+@import "blocks/restrount";
+@import "blocks/market";
+@import "blocks/aboutdubok";
+// @import "blocks/hotelrooms";
  
 
 // @import "blocks/main";

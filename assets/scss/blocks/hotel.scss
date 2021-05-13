@@ -1,4 +1,29 @@
-.hero--hotel{
-    background: $main url('/assets/images/hotel/hotelhero.jpg') no-repeat center;
-    background-size: cover;    
+
+/* Hotel-list */
+
+.hotel-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: left;
+        
+}
+
+
+.hotel-list-item{
+    display: flex;
+    padding-top: 20px;
+    width: 45%;
+    
+    
+    &:before{
+    
+    content: '';
+    margin-right: 20px;
+    max-width: 5px;
+    width: 100%;
+    display: inline-flex;
+    background: rgba($main, .6);
+    }
+    
 }
