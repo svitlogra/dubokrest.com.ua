@@ -66,11 +66,22 @@ img{
     padding: 0 15px;
 }
 
+/* Title */
+
+.title{
+    font-family: 'Raleway', sans-serif;
+    margin: 30px 0;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
 .title--hero{
     position: relative;
     z-index: 10;
     padding-top: 110px;
-    font-family: 'Raleway', sans-serif;
+    
     color: $white;
     text-align: center;
     font-size: 50px;
@@ -96,7 +107,7 @@ img{
     
         background-image: linear-gradient(
             to bottom,
-            rgba($primary, .8),
+            rgba($main, .8),
             rgba($primary, .1) 50%,
             rgba($primary, .8)
         );
@@ -107,6 +118,31 @@ img{
         z-index: 2;
     }
 }
+
+
+/* page__text */
+.page__text{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.page__description{
+    font-family: 'Raleway', sans-serif;
+    
+    max-width: 45rem;
+    line-height: 1.6;
+    margin: 0 auto;
+}
+.title--pages{
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-top: 0;
+
+
+}
 /* Blocks */
 
 @import "blocks/header";
@@ -115,7 +151,7 @@ img{
 @import "blocks/about";
 @import "blocks/btn";
 @import "blocks/rooms";
-@import "blocks/restrount";
+@import "blocks/restmainpage";
 @import "blocks/restrount__menu";
 @import "blocks/offer";
 @import "blocks/map-wrapper";
@@ -126,6 +162,9 @@ img{
 @import "blocks/actions-cards";
 @import "blocks/contacts";
 @import "blocks/hotel";
+@import "blocks/restrount";
+@import "blocks/market";
+@import "blocks/aboutdubok";
 
  
 
