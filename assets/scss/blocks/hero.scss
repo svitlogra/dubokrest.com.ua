@@ -46,23 +46,37 @@
     background: $main url('/assets/images/hotel/hotelhero.jpg') no-repeat center;
     background-size: cover;    
 }
-
+// hero-restrount================================================
 .hero--restrount {
     
     background: url("/assets/images/rest/resthero.jpg") center no-repeat;
     background-size: cover;
 }
-
+// hero-market================================================
 .hero--market{
     background: $main url('/assets/images/market/markethero.jpg') no-repeat center;
     background-size: cover;
 
 }   
+
+// hero-actions================================================
+  
+.hero--actions{
+    background: $main url('/assets/images/offers/actions.jpg') no-repeat center;
+    background-size: cover;
+
+}   
+// hero-contacts================================================
 .hero--contacts{
     background: $main url('/assets/images/contacts/contacts.jpg') no-repeat center;
     background-size: cover;    
 }
+// hero-aboutdubok================================================
+.hero--aboutdubok{
+    background: $main url('/assets/images/about/abouthero.jpg') no-repeat center;
+    background-size: cover;
 
+}   
 
 .hero__items{
     width: 100%;

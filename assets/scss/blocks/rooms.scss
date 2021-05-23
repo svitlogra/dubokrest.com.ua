@@ -59,11 +59,26 @@
     padding: 0 0 15px 0;
 }
 
-.room__description{
+
+
+.description-list{
     font-size: 16px;
     color:$primary; 
+    position:relative;
+    
+    &:before{
+        content: "\2713";
+        padding-right: 15px;
+        color: $light;
+        font-weight: 800;
+        font-size: 16px;
     
 }
+    
+}
+    
+
+
 .fa-check-circle{
     color: $light;
     font-size: 14px;

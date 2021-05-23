@@ -30,7 +30,8 @@ h2 {
 }
 
 p {
-  padding: 0 0 10px;
+  margin: 0;
+  padding: 0 0 15px;
 }
 
 section {
@@ -72,15 +73,16 @@ img {
 }
 
 .title--hero {
+  font-family: 'Raleway', sans-serif;
   position: relative;
   z-index: 10;
   padding-top: 110px;
   color: #fcfdfc;
   text-align: center;
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 5px;
+  letter-spacing: 2px;
 }
 
 /* page__text */
@@ -93,6 +95,33 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
+}
+
+.page__description {
+  font-family: 'Raleway', sans-serif;
+  max-width: 45rem;
+  line-height: 1.6;
+  margin: 0 auto;
+}
+
+.title--pages {
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-top: 0;
+}
+
+/* page__text */
+.page__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  padding-bottom: 25px;
 }
 
 .page__description {
@@ -261,7 +290,7 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  text-align: center;
+  position: relative;
 }
 
 .hero:after {
@@ -269,8 +298,8 @@ img {
   display: block;
   width: 100%;
   height: 100%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(137, 90, 48, 0.8)), color-stop(50%, rgba(61, 55, 52, 0.3)), to(rgba(61, 55, 52, 0.9)));
-  background-image: linear-gradient(to bottom, rgba(137, 90, 48, 0.8), rgba(61, 55, 52, 0.3) 50%, rgba(61, 55, 52, 0.9));
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(137, 90, 48, 0.8)), color-stop(50%, rgba(61, 55, 52, 0.1)), to(rgba(61, 55, 52, 0.8)));
+  background-image: linear-gradient(to bottom, rgba(137, 90, 48, 0.8), rgba(61, 55, 52, 0.1) 50%, rgba(61, 55, 52, 0.8));
   position: absolute;
   top: 0;
   left: 0;
@@ -282,6 +311,11 @@ img {
   background-size: cover;
   height: 100vh;
   min-height: 600px;
+}
+
+.hero--md {
+  height: 400px;
+  min-height: 400px;
 }
 
 .hero--hotel {
@@ -299,8 +333,18 @@ img {
   background-size: cover;
 }
 
+.hero--actions {
+  background: #895a30 url("/assets/images/offers/actions.jpg") no-repeat center;
+  background-size: cover;
+}
+
 .hero--contacts {
   background: #895a30 url("/assets/images/contacts/contacts.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.hero--aboutdubok {
+  background: #895a30 url("/assets/images/about/abouthero.jpg") no-repeat center;
   background-size: cover;
 }
 
@@ -315,22 +359,22 @@ img {
 }
 
 .hero__title {
-  font-size: 80px;
+  font-size: 70px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 5px;
-  margin: 15px 0 15px;
 }
 
 .hero__subtitle {
-  font-size: 28px;
+  font-size: 25px;
   letter-spacing: 2px;
   text-transform: uppercase;
   font-weight: 500;
+  line-height: 1.2;
 }
 
 .hero__text {
-  font-size: 25px;
+  font-size: 23px;
   font-weight: 400;
   letter-spacing: 2px;
   margin-bottom: 80px;
@@ -545,16 +589,33 @@ img {
   width: 32%;
   margin: 0 0 35px 0px;
   height: auto;
-  -webkit-box-shadow: 0px 1px 2px 0px rgba(31, 30, 30, 0.2);
-          box-shadow: 0px 1px 2px 0px rgba(31, 30, 30, 0.2);
+  border-radius: 5px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 1px 7px 0px rgba(61, 55, 52, 0.1);
+          box-shadow: 0 1px 7px 0px rgba(61, 55, 52, 0.1);
+  cursor: pointer;
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+}
+
+.rooms__item:hover {
+  -webkit-transform: translateY(-0.5%);
+          transform: translateY(-0.5%);
+  -webkit-box-shadow: 0px 0 2rem rgba(61, 55, 52, 0.1);
+          box-shadow: 0px 0 2rem rgba(61, 55, 52, 0.1);
 }
 
 .room__photo {
   display: block;
   max-width: 100%;
-  height: auto;
+  height: 300px;
   top: 50%;
   left: 50%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .room__text {
@@ -565,12 +626,24 @@ img {
 .room__name {
   font-size: 20px;
   font-weight: 600;
-  padding: 0 0 20px 0;
+  padding: 0 0 15px 0;
 }
 
-.room__description {
+.room__description-list {
   font-size: 16px;
   color: #3d3734;
+}
+
+.room__description-list:before {
+  content: "";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 5px;
+  margin: 3px auto;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #895a30;
 }
 
 .fa-check-circle {
@@ -1348,11 +1421,6 @@ textarea:hover {
   }
 }
 
-.hero--actions {
-  background: #895a30 url("/assets/images/offers/actions.jpg") no-repeat center;
-  background-size: cover;
-}
-
 .actions__items {
   height: 100%;
   min-height: 100vh;
@@ -1604,10 +1672,5 @@ textarea:hover {
   display: -ms-inline-flexbox;
   display: inline-flex;
   background: rgba(137, 90, 48, 0.6);
-}
-
-.hero--aboutdubok {
-  background: #895a30 url("/assets/images/about/abouthero.jpg") no-repeat center;
-  background-size: cover;
 }
 /*# sourceMappingURL=style.css.map */
