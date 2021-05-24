@@ -1,5 +1,5 @@
 
-/* Hotel-list */
+/* Hotel-text */
 
 .hotel-list{
     display: flex;
@@ -20,10 +20,109 @@
     
     content: '';
     margin-right: 20px;
-    max-width: 5px;
+    max-width: 4px;
     width: 100%;
     display: inline-flex;
     background: rgba($main, .6);
     }
     
 }
+
+
+/*hotel__rooms*/
+
+.hotel__rooms{
+    margin-top: 40px;
+
+}
+.hotel__items{
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: center;
+   
+ }
+ 
+ .hotel__item{
+    text-decoration: none;
+    margin: 0 15px;
+    transition: text-decoration 0.3s linear;
+    position: relative;
+    padding-bottom: 10px;
+    &:after {
+        content: '';
+        position: absolute;
+        right: 0;
+        bottom: -2px;
+        left: 0;
+        height: 2px;
+        background: $light;
+        transform: scaleX(0);
+        transition: transform 0.3s ease;
+    }
+
+    &:hover {
+
+        &::after {
+            transform: scaleX(1);
+        }
+    }
+
+
+&.active {
+
+    a {
+        
+        &:after {
+            transform: scaleX(1);
+        }
+    }
+}
+}
+
+.hotel__item-link{
+    color: $primary;
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    position: relative;
+    
+    &::before{
+        content: '';
+        margin-right: 6px;
+        width: 22px;
+        height: 2px;
+        display: inline-flex;
+        vertical-align: middle;
+        background: rgba(137, 90, 48, 0.6);
+        
+    }
+    
+    
+}
+
+/* hotel__cards */
+
+.hotel__cards{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.hotel__card{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.hotel__slide{
+    width: 100%;
+    max-width: 65%;
+    overflow: hidden;
+    
+    &-hotel__slide-photo{
+        background-size: cover;
+    }
+}
+
+
+
