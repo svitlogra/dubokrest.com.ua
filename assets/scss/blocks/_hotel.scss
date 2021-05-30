@@ -14,8 +14,7 @@
     display: flex;
     padding-top: 20px;
     width: 45%;
-    
-    
+       
     &:before{
     
     content: '';
@@ -38,8 +37,8 @@
 .hotel__items{
     display: flex;
     flex-wrap: wrap;
-   justify-content: center;
-   
+    justify-content: center;
+      
  }
  
  .hotel__item{
@@ -47,18 +46,22 @@
     margin: 0 15px;
     transition: text-decoration 0.3s linear;
     position: relative;
-    padding-bottom: 10px;
-    &:after {
+    cursor: pointer;
+    &:after{
         content: '';
         position: absolute;
-        right: 0;
-        bottom: -2px;
-        left: 0;
-        height: 2px;
-        background: $light;
+        right: -15px;
+        bottom: -1px;
+        left: 0px;
+        height: 30px;
+        background: rgba($main, .3);
         transform: scaleX(0);
-        transition: transform 0.3s ease;
-    }
+        transition: transform 0.4s ease;
+        -webkit-transition: transform 0.4s ease;
+        -moz-transition: transform 0.4s ease;
+        -ms-transition: transform 0.4s ease;
+        -o-transition: transform 0.4s ease;
+}
 
     &:hover {
 
@@ -68,7 +71,7 @@
     }
 
 
-&.active {
+    &.active {
 
     a {
         
@@ -93,7 +96,7 @@
         height: 2px;
         display: inline-flex;
         vertical-align: middle;
-        background: rgba(137, 90, 48, 0.6);
+        background: rgba($main, 0.6);
         
     }
     
@@ -111,18 +114,46 @@
 .hotel__card{
     display: flex;
     justify-content: space-between;
-    
+    align-items: center;
+    height: 550px;
+    overflow: hidden;
+    box-shadow: 0 1px 7px 0px rgba($primary, 0.1);
+    border-radius: 5px;
+    margin: 30px 0;
+    transition: transform .2s;
+    &:hover{
+      transform: translateY(-.5%);
+      box-shadow: 0px 0 2rem rgba($primary, .1);
+    }
 }
 
 .hotel__slide{
     width: 100%;
-    max-width: 65%;
+    max-width: 60%;
+    height: 100%;
     overflow: hidden;
+    cursor: pointer;
     
-    &-hotel__slide-photo{
-        background-size: cover;
-    }
+}
+    
+    
+.hotel__slide-photo{
+   display: block;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left:0;
+   object-fit: cover;
+
 }
 
+.hotel__slide-text{
+    padding: 50px;
+    width: 45%;
+
+}
+
+
+   
 
 

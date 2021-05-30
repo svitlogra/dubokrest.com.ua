@@ -1,8 +1,10 @@
+/* Import */
 @import "vars";
+
 
 body {
     font-family: 'Open Sans', sans-serif;
-    color: $primary;
+    color:$primary;
     padding: 0;
 	margin: 0;
     font-size: 16px;
@@ -120,6 +122,8 @@ img{
 
 
 }
+
+
 /* Blocks */
 
 @import "blocks/header";

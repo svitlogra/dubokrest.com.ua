@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* Import */
 body {
   font-family: 'Open Sans', sans-serif;
   color: #3a2f19;
@@ -272,8 +273,8 @@ img {
   display: block;
   width: 100%;
   height: 100%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(137, 90, 48, 0.8)), color-stop(50%, rgba(58, 47, 25, 0.1)), to(rgba(58, 47, 25, 0.8)));
-  background-image: linear-gradient(to bottom, rgba(137, 90, 48, 0.8), rgba(58, 47, 25, 0.1) 50%, rgba(58, 47, 25, 0.8));
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(138, 83, 35, 0.8)), color-stop(50%, rgba(58, 47, 25, 0.1)), to(rgba(58, 47, 25, 0.8)));
+  background-image: linear-gradient(to bottom, rgba(138, 83, 35, 0.8), rgba(58, 47, 25, 0.1) 50%, rgba(58, 47, 25, 0.8));
   position: absolute;
   top: 0;
   left: 0;
@@ -281,7 +282,7 @@ img {
 }
 
 .hero--main-box {
-  background: #895a30 url("/assets/images/homepage/mainhero.jpg") no-repeat center;
+  background: #8a5323 url("/assets/images/homepage/mainhero.jpg") no-repeat center;
   background-size: cover;
   height: 100vh;
   min-height: 600px;
@@ -293,7 +294,7 @@ img {
 }
 
 .hero--hotel {
-  background: #895a30 url("/assets/images/hotel/hotelhero.jpg") no-repeat center;
+  background: #8a5323 url("/assets/images/hotel/hotelhero.jpg") no-repeat center;
   background-size: cover;
 }
 
@@ -303,22 +304,22 @@ img {
 }
 
 .hero--market {
-  background: #895a30 url("/assets/images/market/markethero.jpg") no-repeat center;
+  background: #8a5323 url("/assets/images/market/markethero.jpg") no-repeat center;
   background-size: cover;
 }
 
 .hero--actions {
-  background: #895a30 url("/assets/images/offers/actions.jpg") no-repeat center;
+  background: #8a5323 url("/assets/images/offers/actions.jpg") no-repeat center;
   background-size: cover;
 }
 
 .hero--contacts {
-  background: #895a30 url("/assets/images/contacts/contacts.jpg") no-repeat center;
+  background: #8a5323 url("/assets/images/contacts/contacts.jpg") no-repeat center;
   background-size: cover;
 }
 
 .hero--aboutdubok {
-  background: #895a30 url("/assets/images/about/abouthero.jpg") no-repeat center;
+  background: #8a5323 url("/assets/images/about/abouthero.jpg") no-repeat center;
   background-size: cover;
 }
 
@@ -383,7 +384,7 @@ img {
 }
 
 .btn--main:hover {
-  background-color: #895a30;
+  background-color: #8a5323;
   border: 0;
 }
 
@@ -627,7 +628,7 @@ img {
 ===================*/
 .rest__box {
   overflow: hidden;
-  background-color: #895a30;
+  background-color: #8a5323;
 }
 
 .rest__item {
@@ -766,7 +767,7 @@ img {
 }
 
 .map__cover {
-  background: #895a30 url("/assets/images/homepage/contacts.png") no-repeat center;
+  background: #8a5323 url("/assets/images/homepage/contacts.png") no-repeat center;
   background-size: cover;
   height: 500px;
   display: -webkit-box;
@@ -1434,8 +1435,8 @@ textarea:hover {
   top: 0;
   left: 0;
   z-index: 2;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(137, 90, 48, 0.5)), color-stop(50%, rgba(58, 47, 25, 0)), to(rgba(58, 47, 25, 0.9)));
-  background: linear-gradient(to bottom, rgba(137, 90, 48, 0.5), rgba(58, 47, 25, 0) 50%, rgba(58, 47, 25, 0.9));
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(138, 83, 35, 0.5)), color-stop(50%, rgba(58, 47, 25, 0)), to(rgba(58, 47, 25, 0.9)));
+  background: linear-gradient(to bottom, rgba(138, 83, 35, 0.5), rgba(58, 47, 25, 0) 50%, rgba(58, 47, 25, 0.9));
 }
 
 .cards__item:hover .card__preview {
@@ -1450,7 +1451,7 @@ textarea:hover {
 
 .cards__item:hover .card__title {
   top: 0;
-  background: rgba(137, 90, 48, 0.7);
+  background: rgba(138, 83, 35, 0.7);
   -webkit-transition-duration: 1s;
           transition-duration: 1s;
 }
@@ -1579,7 +1580,7 @@ textarea:hover {
   width: 20%;
   margin: 3px auto;
   height: 3px;
-  background-color: rgba(137, 90, 48, 0.6);
+  background-color: rgba(138, 83, 35, 0.6);
 }
 
 .contact-details-item {
@@ -1642,7 +1643,7 @@ textarea:hover {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  background: rgba(137, 90, 48, 0.6);
+  background: rgba(138, 83, 35, 0.6);
 }
 
 /*hotel__rooms*/
@@ -1669,23 +1670,27 @@ textarea:hover {
   transition: text-decoration 0.3s linear;
   transition: text-decoration 0.3s linear, -webkit-text-decoration 0.3s linear;
   position: relative;
-  padding-bottom: 10px;
+  cursor: pointer;
 }
 
 .hotel__item:after {
   content: '';
   position: absolute;
-  right: 0;
-  bottom: -2px;
-  left: 0;
-  height: 2px;
-  background: #bb8d3b;
+  right: -15px;
+  bottom: -1px;
+  left: 0px;
+  height: 30px;
+  background: rgba(138, 83, 35, 0.3);
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
-  -webkit-transition: -webkit-transform 0.3s ease;
-  transition: -webkit-transform 0.3s ease;
-  transition: transform 0.3s ease;
-  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  -webkit-transition: -webkit-transform 0.4s ease;
+  transition: -webkit-transform 0.4s ease;
+  transition: transform 0.4s ease;
+  transition: transform 0.4s ease, -webkit-transform 0.4s ease;
+  -webkit-transition: transform 0.4s ease;
+  -moz-transition: transform 0.4s ease;
+  -ms-transition: transform 0.4s ease;
+  -o-transition: transform 0.4s ease;
 }
 
 .hotel__item:hover::after {
@@ -1715,6 +1720,69 @@ textarea:hover {
   display: -ms-inline-flexbox;
   display: inline-flex;
   vertical-align: middle;
-  background: rgba(137, 90, 48, 0.6);
+  background: rgba(138, 83, 35, 0.6);
+}
+
+/* hotel__cards */
+.hotel__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.hotel__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 550px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 1px 7px 0px rgba(58, 47, 25, 0.1);
+          box-shadow: 0 1px 7px 0px rgba(58, 47, 25, 0.1);
+  border-radius: 5px;
+  margin: 20px 0;
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+}
+
+.hotel__card:hover {
+  -webkit-transform: translateY(-0.5%);
+          transform: translateY(-0.5%);
+  -webkit-box-shadow: 0px 0 2rem rgba(58, 47, 25, 0.1);
+          box-shadow: 0px 0 2rem rgba(58, 47, 25, 0.1);
+}
+
+.hotel__slide {
+  width: 100%;
+  max-width: 60%;
+  height: 100%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.hotel__slide-photo {
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.hotel__slide-text {
+  padding: 50px;
+  width: 45%;
 }
 /*# sourceMappingURL=style.css.map */
