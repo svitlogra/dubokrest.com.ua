@@ -1,5 +1,8 @@
 /* Import */
 @import "vars";
+@import 'node_modules/swiper/swiper-bundle';
+
+
 
 
 body {
@@ -119,6 +122,7 @@ img{
     text-transform: uppercase;
     font-size: 20px;
     margin-top: 0;
+    text-align: center;
 
 
 }
@@ -145,6 +149,7 @@ img{
 @import "blocks/restrount";
 @import "blocks/market";
 @import "blocks/aboutdubok";
+@import "blocks/temp";
  
 
 // @import "blocks/main";

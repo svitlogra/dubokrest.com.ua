@@ -4,6 +4,20 @@
     display: block;
 }
 
+.action-list{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 65%;
+    text-align: center;
+    
+  
+}
+
+
+    
+
+
 .actions__cards {
     position: relative;
     display: flex;
@@ -151,4 +165,12 @@
     display: -webkit-box; /* Включаем флексбоксы */
     -webkit-box-orient: vertical; /* Вертикальная ориентация */
     
+}
+
+
+//Promo-content===================================
+.promo-content{
+    margin-bottom: 40px;
+
+
 }
