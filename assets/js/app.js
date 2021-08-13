@@ -1,6 +1,66 @@
 console.log('file 1');
 
 
+$(function() {
+
+   /* Fixed Header */
+    let header = $("#header");
+    let hero = $("#hero");
+    let heroH = hero.innerHeight();
+    let scrollPos = $(window).scrollTop();
+  
+    
+    checkScroll(scrollPos, heroH);
+
+    $(window).on("scroll resize", function() {
+        heroH = hero.innerHeight();
+        scrollPos = $(this).scrollTop();
+
+        checkScroll(scrollPos, heroH);
+    });
+
+    function checkScroll(scrollPos, heroH) {
+        if( scrollPos > heroH ) {
+            header.addClass("fixed");
+        } else {
+            header.removeClass("fixed");
+        }
+      }
+    });
+
+
+/* Smooth scroll */
+$("[data-scroll]").on("click", function(event) {
+  event.preventDefault();
+
+  let elementId = $(this).data('scroll');
+  
+  
+  let elementOffset = $(elementId).offset().top;
+  console.log(elementOffset);
+  // nav.removeClass("show");
+
+  $("html, body").animate({
+      scrollTop: elementOffset - 180
+  }, 1500);
+  
+});
+
+/* Nav Toggle */
+
+let nav = $("#nav");
+let navToggle = $("#navToggle");
+
+navToggle.on("click", function(event) {
+  event.preventDefault();
+
+  nav.toggleClass("show");
+});
+
+
+
+
+
 AOS.init({
   // Global settings:
   disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
@@ -25,59 +85,85 @@ AOS.init({
 });
 
 //Swiper
-import { Swiper, Parallax, Mousewheel, Pagination } from 'swiper'
+import { Swiper, Parallax, Mousewheel, Pagination, Navigation, Scrollbar } from 'swiper'
   // import Swiper styles
-Swiper.use([ Parallax, Mousewheel, Pagination ])
+Swiper.use ([ Parallax, Mousewheel, Pagination, Navigation, Scrollbar ])
 
 document.addEventListener('DOMContentLoaded', () => {
   
   const swiperHotel = new Swiper('.hotel-room__slider', {
   
-  speed:1500,  
-  parallax:true,
-  // direction: 'vertical',
-  // loop: true,
-  
-  // grabCursor: true,
-  
-  mousewheel: {
-    invert: false,
-    
-    },
-  
-  pagination: {
-    el: '.swiper-pagination',
-      type: 'bullets',
-      // clickable: true,
-    dynamicBullets: true,
-    },
-    
-      
-    
-    
-  });
-  
-  const swiperRestrount = new Swiper ('.restrount__slider', {
     speed:1500,  
     parallax:true,
+    loop: true,
     grabCursor: true,
-    // direction: 'vertical',
-    // loop: true,
-   
+    
+
     mousewheel: {
       invert: false,
-      
       },
-    
+
     pagination: {
       el: '.swiper-pagination',
         type: 'bullets',
-        // clickable: true,
-      dynamicBullets: true,
+        dynamicBullets: true,
+      },
+   
+  });
+  
+  const swiperRestrount = new Swiper('.restrount__slider', {
+  
+    speed:2000,  
+    parallax:true,
+    grabCursor: true,
+    loop: true,
+   
+    mousewheel: {
+      invert: false,
+      },
+    
+     navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
       },
       
+      scrollbar: {
+        el: '.swiper-scrollbar',
+        draggable: true,
+      },
+      
+  });
+  
+  const swiperRooms = new Swiper('.rooms__inner', {
+  
+    speed:2000,  
+    parallax:true,
+    grabCursor: true,
+    loop: false,
+    slidesPerView: 'auto',
     
-  })
+    spaceBetween: 20,
+    
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+   
+    mousewheel: {
+      invert: false,
+      },
+    
+     navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      
+      // scrollbar: {
+      //   el: '.swiper-scrollbar',
+      //   draggable: true,
+      // },
+      
+  });
 
 });
 

@@ -1,5 +1,44 @@
-.restrount__slider {
-    width:100%;
-    height:600px;
+// Restrount-Swiper-style================================================================
 
+
+.restrount__slider {
+    
+    height: 600px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 30px;
+  
+   .swiper-restrount__slide {
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .swiper-restrount__bg {
+    height: 100%;
+    background-position: center;
+    background-size: cover; 
+    overflow: hidden;
+    }
+    
+    .swiper-button-prev::after, .swiper-button-next::after {
+        color: rgba($white, 0.5);
+        font-size: 30px;
+        
+    }
 }
+  
+  
+
+    
+.swiper-scrollbar {
+    height: 8px;
+    
+    .swiper-scrollbar-drag {
+        background: rgba($light, 0.8);
+        
+    }
+        
+}
+    
+
