@@ -116,6 +116,10 @@
     border-radius: 5px;
     margin: 30px 0;
     transition: transform .2s;
+    &.deluxedoubleroom, &.doublestandart {
+        flex-direction: row-reverse;
+    }
+    
     &:hover{
       transform: translateY(-.5%);
       box-shadow: 0px 0 2rem rgba($primary, .1);
@@ -126,8 +130,9 @@
 
 // Hotel-room__text================================================================
 .hotel-room__text{
-    padding: 50px;
+    padding: 40px;
     width: 35%;
+    height: 100%;
 
 }
 
@@ -151,7 +156,7 @@
 .hotel-room__slider {
     
     height: 100%;
-    width: 100%;
+    width: 65%;
     overflow: hidden;
     position: relative;
   }
@@ -192,7 +197,9 @@
     }
 
 
-
+    .offer__items--hotel{
+        margin-bottom: 40px;
+    }
 
 
 
