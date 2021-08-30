@@ -2,6 +2,11 @@
 @import "vars";
 @import 'node_modules/swiper/swiper-bundle';
 
+@font-face {
+    font-family: 'Corinthia';
+    src: url("/assets/fonts/Corinthia.ttf");
+}
+
 
 body {
     font-family: 'Open Sans', sans-serif;

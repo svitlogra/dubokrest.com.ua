@@ -17,14 +17,20 @@
     -o-border-radius: 3px;
 }
 .btn--main{
+   
     margin: 0 auto;
     font-size: 16px;
-    text-transform: uppercase;
     color: $white;
     letter-spacing: 2px;
     background-color: $light;
     border: 0;
     
+}
+
+.btn--promo{
+    position: relative;
+    z-index: 15;
+    bottom: 15%
 }
 
 .btn--main:hover{
