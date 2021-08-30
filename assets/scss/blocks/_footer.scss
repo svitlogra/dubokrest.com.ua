@@ -41,9 +41,14 @@
 }
 .footer__item{
     line-height: 1.6;
-    
+    color: #9c9c9c;
+    transition: text-decoration .5s ease-in-out;
+    &:hover
+{
+    text-decoration: underline;
+    }
 }
-.footer__title {
+    .footer__title {
     font-size: 20px;
     color: $white;
     margin-bottom: 20px;
@@ -56,17 +61,11 @@
 
 .footer__nav>a{
     color: #9c9c9c;
-   transform: text-decoration;
-   //color: #9c9c9c;
-   //font-weight: 500;
-   -webkit-transform: text-decoration;
-   -moz-transform: text-decoration;
-   -ms-transform: text-decoration;
-   -o-transform: text-decoration;
-}
-
-.footer__nav>a:hover{
+    transition: text-decoration 1s ease-in-out;
+    &:hover
+{
     text-decoration: underline;
+    }
 }
 
 /* Copyright

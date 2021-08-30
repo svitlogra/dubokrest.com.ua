@@ -3,8 +3,6 @@
 @import 'node_modules/swiper/swiper-bundle';
 
 
-
-
 body {
     font-family: 'Open Sans', sans-serif;
     color:$primary;
@@ -99,8 +97,6 @@ img{
 }
 
 
-
-
 /* page__text */
 .page__text{
     display: flex;
@@ -127,7 +123,6 @@ img{
 
 }
 
-
 /* Blocks */
 
 @import "blocks/header";
@@ -148,13 +143,8 @@ img{
 @import "blocks/restrount";
 @import "blocks/market";
 @import "blocks/aboutdubok";
-@import "blocks/temp";
 @import "blocks/devices";
  
-
-// @import "blocks/main";
-// @import "blocks/container";
-
 
 
 
